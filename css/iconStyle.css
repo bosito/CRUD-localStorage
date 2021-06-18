@@ -1,0 +1,145 @@
+.rotate-1 {
+  animation: rotate 0.3s linear infinite;
+  transform-origin: 75% 80%;
+}
+
+.rotate-3 {
+  animation: rotate 0.3s linear infinite;
+  transform-origin: 22% 23%;
+}
+
+.rotate-2 {
+  animation: rotate 0.3s linear infinite;
+  transform-origin: 80% 24%;
+}
+
+.rotate-4 {
+  animation: rotate 0.3s linear infinite;
+  transform-origin: 25% 79%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* animacion de icono de imagen */
+
+#icon-img-animation .sun-loading {
+  -webkit-animation: image-loading linear 2s alternate;
+  animation: image-loading linear 2s alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes image-loading {
+  0% {
+    -webkit-transform: translate(0px, 3px) scaleX(1.1) scaleY(1.1);
+    transform: translate(0px, 3px) scaleX(1.1) scaleY(1.1);
+  }
+
+  100% {
+    -webkit-transform: translate(7px, -1px) scaleX(1) scaleY(1);
+    transform: translate(7px, -1px) scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes image-loading {
+  0% {
+    -webkit-transform: translate(0px, 3px) scaleX(1.1) scaleY(1.1);
+    transform: translate(0px, 3px) scaleX(1.1) scaleY(1.1);
+  }
+
+  100% {
+    -webkit-transform: translate(7px, -1px) scaleX(1) scaleY(1);
+    transform: translate(7px, -1px) scaleX(1) scaleY(1);
+  }
+}
+
+/* animacion de bote de basura */
+
+#icon-trash .trash-close {
+  -webkit-animation: trashing linear 2s;
+  animation: trashing linear 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes trashing {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateX(-10px) rotate(10deg);
+    transform: translateX(-10px) rotate(10deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(5px) rotate(-10deg);
+    transform: translateX(5px) rotate(-10deg);
+  }
+
+  45% {
+    -webkit-transform: translateX(-5px) rotate(5.6deg);
+    transform: translateX(-5px) rotate(5.6deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(6px) rotate(-6.4deg);
+    transform: translateX(6px) rotate(-6.4deg);
+  }
+
+  75% {
+    -webkit-transform: translateX(-3px) rotate(3.2deg);
+    transform: translateX(-3px) rotate(3.2deg);
+  }
+}
+
+@keyframes trashing {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateX(-10px) rotate(10deg);
+    transform: translateX(-10px) rotate(10deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(5px) rotate(-10deg);
+    transform: translateX(5px) rotate(-10deg);
+  }
+
+  45% {
+    -webkit-transform: translateX(-5px) rotate(5.6deg);
+    transform: translateX(-5px) rotate(5.6deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(6px) rotate(-6.4deg);
+    transform: translateX(6px) rotate(-6.4deg);
+  }
+
+  75% {
+    -webkit-transform: translateX(-3px) rotate(3.2deg);
+    transform: translateX(-3px) rotate(3.2deg);
+  }
+}
